@@ -1,18 +1,23 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
 }
 
-.App-header {
+/*.App {
+  text-align: center;
+}*/
+
+/*.App-header {
   background-color: #62656b;
   min-height: 10vh;
   display: inline-flexbox;
   flex-direction: row;
   /*align-items: flex-end;*/
-  font-size: calc(30px + 2vmin);
+  /*font-size: calc(30px + 2vmin);
   color: white;
-}
+}*/
 
-.container {
+/*.container {
   display: grid;
   grid-row: initial;
 }
@@ -26,9 +31,20 @@
 }
 */
 
-.product img {
-  width: 250px;
+h2 {
+  text-align: center;
+  font-weight: bold;
 }
+
+.product img {
+  /*width: 250px;*/
+  max-height: 8rem;
+}
+
+.imgCart {
+  max-height: 7rem;
+}
+
 .product{
   padding: 40px;
 }
@@ -39,8 +55,80 @@ h3 {
 
 .add-btn {
   border: 2px solid black ;
-  background-color: rgb(31, 158, 99);
+  background-color: white;
   border-radius: 50px;
-  width: 150px;
+  width: 100px;
   font-size: 20px;
+  font-weight: bold;
+  align-self: center;
+}
+
+/*a {
+  text-decoration: none;
+}*/
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+
+.block {
+  background-color: rgb(61, 61, 58);
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 00.5rem;
+}
+
+countItemCart {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  border: solid slategrey;
+  background-color: rgb(168, 204, 202);
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 00.5rem;
+}
+
+.cart {
+  /*background-color: rgb(204, 196, 160);*/
+  border: solid slategrey;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 00.5rem;
+}
+
+button {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  width: 100%;
+  cursor: pointer;
+}
+button.add {
+  background-color: white;
+  width: 1.5rem;
+}
+button.remove {
+  background-color: white;
+  width: 1.5rem;
+}
+button.badge {
+  background-color: white;
+  border: none;
+  color: black;
+  width: 1.5rem;
 }
